@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="../static/gamestyle.css">
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <link type="text/css" rel="stylesheet" href="../static/gamestyle.css">
 </head>
-<body >
-<div class= "wrapper">
-<div class= "row">
-<div class= "col">
 
-<div class="player-0-panel">
-   <p class="player-name" id="name-0" name= "player1"> {{player1}}</p>
-    <p class="player-score" id="score-0">{{score1}}</p>
-    <p class ="flags">{{flag1}}</p>
-</div>
+<body>
+   <div class="wrapper">
+      <div class="row">
+         <div class="col">
+            <div class="player-0-panel">
+               <p class="player-name" id="name-0" name="player1"> {{player1}}</p>
+               <p class="player-score" id="score-0">{{score1}}</p>
+               <p class="flags">{{flag1}}</p>
+            </div>
 
-<div class="player-0-panel">
-   <p class="player-name" id="name-1" name= "player2"> {{player2}}</p>
-    <p class="player-score" id="score-0"> {{score2}}</p>
-    <p class ="flags">{{flag2}}</p>
-</div>
+            <div class="player-0-panel">
+               <p class="player-name" id="name-1" name="player2"> {{player2}}</p>
+               <p class="player-score" id="score-0"> {{score2}}</p>
+               <p class="flags">{{flag2}}</p>
+            </div>
 
-<p class ="current"> Current Player :{{yousefPlayer}}</p>
+            <h3 class="current"> Current Player :{{yousefPlayer}}</h3>
 
-<div class ="buttonsRow">
-<form action="hold" method="GET">
-   <button type="submit" class="btn-hold" id="holdBtn"><i class="ion-ios-download-outline"></i>Hold</button>
-</form>
-
-
-<form action="rollDice" method="GET">
-   <button type= "submit" class="btn-roll" id="rollBtn"><i class="ion-ios-loop"></i>Roll </button>
-</form>
+            <div class="buttonsRow">
+               <form action="hold" method="GET">
+                  <button type="submit" class="btn-hold" id="holdBtn"><i
+                        class="ion-ios-download-outline"></i>Hold</button>
+               </form>
 
 
-<form action="newGame" method="GET">
-   <button type= "submit" class="btn-roll" id="newGameBtn"><i class="ion-ios-loop"></i>New game </button>
-</form>
-
-<form action="exit" method="GET">
-   <button type= "submit" class="btn-roll" id="exit"><i class="ion-ios-loop"></i>Exit  </button>
-</form>
-</div>
+               <form action="rollDice" method="GET">
+                  <button type="submit" class="btn-roll" id="rollBtn"><i class="ion-ios-loop"></i>Roll </button>
+               </form>
 
 
+               <form action="newGame" method="GET">
+                  <button type="submit" class="btn-roll" id="newGameBtn"><i class="ion-ios-loop"></i>New game </button>
+               </form>
 
+               <form action="exit" method="GET">
+                  <button type="submit" class="btn-roll" id="exit"><i class="ion-ios-loop"></i>Exit </button>
+               </form>
+            </div>
 
-<h1 class = winMsg>  {{winner}}</h1>
-
-
-<br>
-<img class ="dice" src = "../static/{{dicePic}}.jpg"</p>
-</form>
-</div>
-</div>
-</div>
+            <img class="dice" src="../static/{{dicePic}}.jpg" alt="dice picture">
+         
+            <h1 class=winMsg>{{winner}}</h1>
+         </div>
+      </div>
+   </div>
 </body>
+
 </html>
