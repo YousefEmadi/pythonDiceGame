@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+.wrapper {
+    width: 1100px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.playerOne{
+    float: left;
+}
+.playerTwo{
+    float: left;
+}
+
+.player-0-panel,
+.player-1-panel {
+    width: 50%;
+    float: left;
+    height: 350px;
+    padding: 20px;
+    
+}
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #4a3939;
+    margin-bottom: 130px;
+}
+.player-name{
+    font-weight: bold;
+}
+button {
+   
+    width: 200px;
+    left: 50%;
+    float: left;
+    transform: translateX(-50%);
+    color:white;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: rgb(2, 0, 0);
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    margin-right: 5px ;
+}
+.buttonsRow{
+    padding-left: 235px;
+    padding-top: 45px;
+}
+
+.flags{
+    padding-left: 235px;
+    margin-top: -100px;
+    font-size: 16px;
+    color: red;
+    
+
+
+}
+.current{
+    padding-left: 470px;
+    color : rgb(59, 5, 5)
+   
+
+}
+
+.dice{
+    margin-top: -550px;
+    padding-left:500px ;
+}
+.winMsg{
+    padding-left: 320px;
+    color: rgb(146, 43, 43);
+    margin-top: 30px;
+
+}
+
